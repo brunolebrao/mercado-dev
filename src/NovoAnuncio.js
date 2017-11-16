@@ -15,7 +15,7 @@ import { Redirect } from 'react-router-dom'
      
     handleSubmit(e){
         const file = this.foto.files[0]
-        const { name, size } = file
+        const { name } = file
         const ref = storage.ref(name)
         ref
             .put(file)
